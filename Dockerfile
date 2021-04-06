@@ -18,7 +18,8 @@ RUN apk --update --no-cache add pptpd ppp iptables && \
     echo 'nobsdcomp' >> /etc/ppp/pptpd-options && \
     echo 'novj' >> /etc/ppp/pptpd-options && \
     echo 'novjccomp' >> /etc/ppp/pptpd-options && \
-    echo 'nologfd' >> /etc/ppp/pptpd-options
+    echo 'nologfd' >> /etc/ppp/pptpd-options && \
+    echo 'silent' >> /etc/ppp/pptpd-options
 
 EXPOSE 1723/tcp
  
